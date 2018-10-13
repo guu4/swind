@@ -1,0 +1,11 @@
+@import "config";
+
+.header {
+  display: flex;
+  background-color: $green;
+  margin: auto;
+
+  &__title {
+    font-size: 60;
+  }
+}
