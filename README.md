@@ -5,14 +5,17 @@
 --------------------------------------------------------------------------------------------------------------------------------------
 node.js: https://nodejs.org/en/
 
-Í terminal:
+stylelint-config-prierm
 
-'''
-cd /slóð/á/verkefni
-npm init
+Í terminal:
+```
+> cd /slóð/á/verkefni
+> npm init
 ..svara spurningum
-> npm install browser-sync --save-dev
-'''
+> npm install --save-dev stylelint
+...
+> npm install --save-dev stylelint-config-primer
+```
 --------------------------------------------------------------------------------------------------------------------------------------
 
 Verkefnið felst í því að smíða vef eftir forskrift.
