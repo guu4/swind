@@ -1,11 +1,10 @@
 
 # Hópverkefni 1
 
-Þessi síða birtist best í Netscape Navigator
 --------------------------------------------------------------------------------------------------------------------------------------
 node.js: https://nodejs.org/en/
 
-stylelint-config-prierm
+stylelint-config-primer
 
 Í terminal:
 ```
