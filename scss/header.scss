@@ -1,11 +1,45 @@
 @import "config";
 
+
 .header {
   display: flex;
+  flex-direction: column;
   background-color: $green;
   margin: auto;
+  max-width: $max-width;
+  align-items: center;
 
   &__title {
-    font-size: 60;
+    font-size: 60px;
+    text-align: center;
+
+  }
+  &__sub {
+    display:flex;
+    align-items: stretch;
+    width: $max-width;
+  }
+  &__box {
+    width: 33.3333333333%;
+  }
+  &__links {
+    display:inline-flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+    width: 33.3333333333%;
+  }
+  &__link {
+    display:inline-flex;
+  }
+  &__link:hover {
+    text-decoration: underline;
+  }
+  &__button {
+    display:inline-flex;
+    width: 33.3333333333%;
+    justify-content: flex-end;
+
   }
 }

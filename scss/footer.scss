@@ -1,0 +1,29 @@
+@import "config";
+
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: $red;
+  margin: auto;
+  max-width: $max-width;
+  align-items: center;
+
+  &__box {
+    display: inline-flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  &__title {
+  }
+
+  &__links {
+    display: inline-flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-around;
+    color: $white;
+  }
+}
