@@ -1,6 +1,22 @@
 
 # Hópverkefni 1
 
+--------------------------------------------------------------------------------------------------------------------------------------
+node.js: https://nodejs.org/en/
+
+stylelint-config-primer
+
+Í terminal:
+```
+> cd /slóð/á/verkefni
+> npm init
+..svara spurningum
+> npm install --save-dev stylelint
+...
+> npm install --save-dev stylelint-config-primer
+```
+--------------------------------------------------------------------------------------------------------------------------------------
+
 Verkefnið felst í því að smíða vef eftir forskrift.
 
 Gefnar eru [fyrirmyndir](utlit/) í `500px`, `800px` og `1500px` með grind ásamt `1500px` án grindar og yfirliti yfir virkni vefs í `utlit/video.mp4`.
