@@ -20,7 +20,7 @@
     max-width: $max-width;
     width: 100vw;
 
-    @media (max-width: 500px) {
+    @media (max-width: $bpoint__narrow) {
       flex-direction: column;
     }
   }
@@ -28,7 +28,7 @@
   &__box {
     width: 33.3333333333%;
 
-    @media (max-width: 500px) {
+    @media (max-width: $bpoint__narrow) {
       width: 0%;
     }
   }
@@ -41,7 +41,7 @@
     justify-content: center;
     width: 33.3333333333%;
 
-    @media (max-width: 500px) {
+    @media (max-width: $bpoint__narrow) {
       width: 100%;
     }
   }
@@ -72,7 +72,7 @@
     justify-content: flex-end;
     padding: 10px;
 
-    @media (max-width: 500px) {
+    @media (max-width: $bpoint__narrow) {
       width: 100%;
       justify-content: center;
     }
