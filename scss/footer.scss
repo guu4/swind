@@ -1,21 +1,32 @@
 @import "config";
 
 .footer {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   background-color: $red;
   margin: auto;
   max-width: $max-width;
   align-items: center;
 
+  &__boxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 20px;
+  }
+
   &__box {
     display: inline-flex;
     flex-direction: column;
     width: 50%;
+
+    @media (min-width: 800px) {
+      width: 25%;
+    }
   }
 
   &__title {
+    font-family: 'Oswald', Verdana, serif;
+    padding: 1.5em 0 0 0;
+    font-size: 18px;
   }
 
   &__links {
@@ -23,6 +34,24 @@
     flex-direction: column;
     list-style: none;
     justify-content: space-around;
+  }
+  &__link {
+    display:inline-flex;
     color: $white;
+    transition: color 300ms ease-in-out 0;
+    font-family: 'Open Sans', helvetica, arial, sans-serif;
+    font-size: 14px;
+    font-family: 'Open Sans', helvetica, arial, sans-serif;
+    text-decoration: none;
+    padding: 0 0.25em 0 0.25em;
+  }
+  &__link:hover {
+    color: $black;
+  }
+  &__company {
+    font-family: 'Open Sans', helvetica, arial, sans-serif;
+    text-align: center;
+    font-size: 12px;
+    padding: 3em 0 3em 0;
   }
 }
