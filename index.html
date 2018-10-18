@@ -7,6 +7,8 @@
 
   <link rel="stylesheet" href="grid.css">
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
   <body>
@@ -15,12 +17,14 @@
       <div class="header__sub">
         <div class="header__box"></div>
         <ul class="header__links">
-          <li class="header__link">FORSÍÐA</li>
-          <li class="header__link">VÖRUR</li>
-          <li class="header__link">STARFSFÓLK</li>
+          <li><a class="header__link" href="./index.html">FORSÍÐA</a></li>
+          <li><a class="header__link" href="./pages/products.html">VÖRUR</a></li>
+          <li><a class="header__link" href="./pages/staff.html">STARFSFÓLK</a></li>
         </ul>
-        <div class="header__button">
-          <button value="karfa">Karfa(3)</button>
+        <div class="header__cart">
+          <a class="header__link" href="./pages/cart.html">
+            <img class="header__image" src="./img/cart.svg"></img>Karfa(3)
+          </a>
         </div>
       </div>
     </header>

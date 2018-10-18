@@ -1,6 +1,5 @@
 @import "config";
 
-
 .header {
   display: flex;
   flex-direction: column;
@@ -12,34 +11,73 @@
   &__title {
     font-size: 60px;
     text-align: center;
-
+    font-family: 'Oswald', Verdana, serif;
   }
+
   &__sub {
     display:flex;
     align-items: stretch;
-    width: $max-width;
+    max-width: $max-width;
+    width: 100vw;
+
+    @media (max-width: 500px) {
+      flex-direction: column;
+    }
   }
+
   &__box {
     width: 33.3333333333%;
+
+    @media (max-width: 500px) {
+      width: 0%;
+    }
   }
+
   &__links {
     display:inline-flex;
     flex-direction: row;
     list-style: none;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     width: 33.3333333333%;
+
+    @media (max-width: 500px) {
+      width: 100%;
+    }
   }
+
   &__link {
     display:inline-flex;
+    color: $black;
+    transition: color 300ms ease-in-out 0;
+    padding: 10px;
+    font-family: 'Open Sans', helvetica, arial, sans-serif;
+    font-size: 14px;
   }
+
   &__link:hover {
+    color: $white;
+  }
+
+  &__link:active {
     text-decoration: underline;
   }
-  &__button {
+
+  &__cart {
     display:inline-flex;
     width: 33.3333333333%;
     justify-content: flex-end;
+    padding: 10px;
 
+    @media (max-width: 500px) {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+  
+  &__image {
+    width: 1.5em;
+    height: 1.5em;
+    padding-right: 0.2em;
   }
 }
