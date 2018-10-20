@@ -53,11 +53,17 @@
                 <label>Fjöldi:</label>
                 <input name="quantity" type="number" placeholder="1">
               </div>
-              <div class="form__product_item">
-                <input name="update" type="submit" value="Uppfæ">
+              <div class="form__product__item">
+                <button class="button button--cart">
+                  <img class="header__image" src="../img/cart.svg">
+                  <div class="button__text">Uppfæra</span>
+                </button>
               </div>
-              <div class="form__product_item">
-                <button class="button button--cart">Eyða úr körfu</button>
+              <div class="form__product__item">
+                <button class="button button--cart">
+                  <img class="header__image" src="../img/cart.svg">
+                  Eyða úr körfu
+                </button>
               </div>
             </div>
           </div>
@@ -83,17 +89,29 @@
                   2
                   Uppfæra
                   Eyða úr körfu
-                  Sendingarupplýsingar
-                  Nafn:
               </div>
             </div>
           </div>
         </div>
 
-        <div class="grid__row">
-          <div class="grid__col grid__col--info">
-            Sendingarupplýsingar
-            Nafn:
+        <form>
+          <div class="grid__row grid__row--form">
+            <h2 class="title">
+              Sendingarupplýsingar
+            </h2>
+            <div class="grid__col grid__col--__label">
+              Nafn:
+            </div>
+            <div class="grid__col grid__col--input">
+              <input name="name" type="text">
+            </div>
+          </div>
+        </form>
+
+
+
+
+
 
             Heimilisfang:
 

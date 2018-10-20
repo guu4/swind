@@ -17,6 +17,11 @@ main {
     @media (min-width: $bpoint__narrow) {
       flex-direction: row;
     }
+
+    &--form {
+      flex-direction: row;
+      align-items: center;
+    }
   }
 
   &__col {
@@ -42,8 +47,13 @@ main {
 
     &--info {
       @media (min-width: bpoint__narrow) {
-        widows: 50%;
+        width: 50%;
       }
+    }
+
+    &--label {
+    height: 40px;
+    line-height: 40px;
     }
 
     &__description {
@@ -58,10 +68,13 @@ main {
       justify-content: flex-end;
     }
   }
+
+
 }
 
 .form__product {
   display: flex;
+  align-items: flex-end;
 
   &__item {
 
@@ -75,6 +88,9 @@ main {
 input {
   border: 1px solid $black;
   border-radius: 0.3125em;
+  width: 7.5em;
+  height: 40px;
+  padding-left: 0.5em;
 }
 
 
