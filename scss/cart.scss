@@ -60,6 +60,24 @@ main {
   }
 }
 
+.form__product {
+  display: flex;
+
+  &__item {
+
+    &--quantity {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+input {
+  border: 1px solid $black;
+  border-radius: 0.3125em;
+}
+
+
 .image {
   max-width: 100%;
 }
