@@ -3,58 +3,56 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Starfsfólk</title>
+  <title>Vöruhúsið</title>
 
-  <link rel="stylesheet" href="../grid.css">
-  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="grid.css">
+  <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
   <body>
     <header class="header">
-      <h1 class="header__title">Starfsfólk</h1>
+      <h1 class="header__title">Vöruhúsið</h1>
       <div class="header__sub">
         <div class="header__box"></div>
         <ul class="header__links">
-          <li><a class="header__link" href="../index.html">FORSÍÐA</a></li>
-          <li><a class="header__link" href="products.html">VÖRUR</a></li>
-          <li><a class="header__link" href="staff.html">STARFSFÓLK</a></li>
+          <li><a class="header__link" href="./index.html">FORSÍÐA</a></li>
+          <li><a class="header__link" href="./pages/products.html">VÖRUR</a></li>
+          <li><a class="header__link" href="./pages/staff.html">STARFSFÓLK</a></li>
         </ul>
         <div class="header__cart">
           <a class="header__link" href="./pages/cart.html">
-            <img class="header__image" src="../img/cart.svg"></img>Karfa(3)
+            <img class="header__image" src="./img/cart.svg"></img>Karfa(3)
           </a>
         </div>
       </div>
     </header>
-    <main class="staff">
-      <div class="staff__cards">
-        <div class="staff__card">
-          <img class="staff__image" src="../img/karolina.jpg" alt="Karólína Pálsdóttir"></img>
-          <h3 class="staff__title">Karólína Pálsdóttir</h3>
-          <p class="staff__text">Karólína er forstjóri Vöruhússins.</p>
+    <section class="section">
+      <div class="section__cards">
+        <div class="section__card">
+          <div class="section__box">
+            <h2 class="section__title">Allar vörurnar</h2>
+            <p>Vöruhúsið hefur allar þær vörur sem þig vantar.</p>
+            <button class="button">Skoða vörur</button>
+          </div>
+          <div class="section__box">
+            <img class="section__image" src="./img/products.jpg" alt="Hjá vöruhúsinu er allt til"></img>
+            </div>
         </div>
-        <div class="staff__card">
-          <img class="staff__image" src="../img/tomas.jpg" alt="Tómas Jónsson"></img>
-          <h3 class="staff__title">Tómas Jónsson</h3>
-          <p class="staff__text">Tómas sér um að koma vörunum til þín. Hratt og örugglega.</p>
+        <div class="section__card">
+          <div class="section__box">
+            <h2 class="section__title">Besta starfsfólkið</h2>
+            <p>Starfsfólkið okkar hugsar vel um þig.</p>
+            <button class="button">Kynnast starfsfólki</button>
+          </div>
+          <div class="section__box">
+            <img class="section__image" src="./img/team.jpg" alt="Mynd af höndum teymisins"></img>
+            </div>
         </div>
-        <div class="staff__card">
-          <img class="staff__image" src="../img/anna.jpg" alt="Anna Atladóttir"></img>
-          <h3 class="staff__title">Anna Atladóttir</h3>
-          <p class="staff__text">Anna er forritari hjá Vöruhúsinu. Ef eitthvað er að, lagar Anna það.</p>
-        </div>
-        <div class="staff__card">
-          <img class="staff__image" src="../img/jon.jpg" alt="Jón Guðmundsson"></img>
-          <h3 class="staff__title">Jón Guðmundsson</h3>
-          <p class="staff__text">Jón sér um peningana. Gefðu Jóni peninga með því að kaupa eitthvað klikkað hjá Vöruhúsinu.</p>
-        </div>
-      </div>
-    </main>
-    <footer class="footer">
-      <div class="grid__row">
-        <div class="grid__col">
+      </section>
+      <footer class="footer">
+        <div class="footer__boxes">
           <div class="footer__box">
             <h3 class="footer__title">Vöruflokkar</h3>
             <ul class="footer__links">
@@ -92,8 +90,7 @@
             </ul>
           </div>
         </div>
-      </div>
-      <p class="footer__company">© 2018 Vöruhúsið</p>
-    </footer>
-  </body>
-  </html>
+        <p class="footer__company">© 2018 Vöruhúsið</p>
+      </footer>
+    </body>
+    </html>
