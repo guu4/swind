@@ -16,3 +16,27 @@ $red: #cc9694;
 // Breakpoints
 $bpoint__narrow: 700px;
 $bpoint__wide: 1000px;
+
+// Grids
+
+// Footer Grid
+
+.grid {
+
+  &__row {
+    margin: auto;
+    max-width: $max-width;
+  }
+
+  &__col {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    @media (min-width: $bpoint__wide) {
+      flex-wrap: nowrap;
+    }
+  }
+}
