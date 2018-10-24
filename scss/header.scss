@@ -56,13 +56,15 @@
     font-family: 'Open Sans', helvetica, arial, sans-serif;
     font-size: 14px;
     text-decoration: none;
+    font-weight: bolder;
 
     &:hover {
       color: $white;
     }
   }
 
-  &__link:active {
+  &__current {
+    @extend .header__link;
     text-decoration: underline;
   }
 

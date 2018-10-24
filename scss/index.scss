@@ -42,13 +42,23 @@
   }
 
   &__title {
-    font-size: 48px;
+    font-size: 36px;
     font-family: 'Oswald', Verdana, serif;
+
+    @media (max-width: $bpoint__narrow) {
+      font-size: 48px;
+    }
   }
 
   &__text {
     font-family: 'Open Sans', helvetica, arial, sans-serif;
-    font-size: 14px;
+    font-size: 24px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    @media (max-width: $bpoint__narrow) {
+      font-size: 36px;
+    }
   }
 
   &__image {
