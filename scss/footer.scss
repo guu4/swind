@@ -3,6 +3,26 @@
 .footer {
   background-color: $red;
 
+  &__grid {
+
+    &__row {
+      margin: auto;
+      max-width: $max-width;
+    }
+
+    &__col {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-left: 10px;
+      margin-right: 10px;
+
+      @media (min-width: $bpoint__wide) {
+        flex-wrap: nowrap;
+      }
+    }
+  }
+
   &__box {
     display: inline-flex;
     flex-direction: column;
