@@ -23,3 +23,15 @@ $bpoint__wide: 1000px;
 // Margins
 $slim__boxes: 0.1em;
 
+// Main
+main {
+  margin: 0 auto;
+  max-width: $max-width;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $max-width) {
+    padding-left: 0;
+    padding-right: 0,
+  }
+}
