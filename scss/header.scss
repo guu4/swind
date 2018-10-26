@@ -5,13 +5,14 @@
   flex-direction: column;
   background-color: $green;
   margin: auto;
-  max-width: $max-width;
+
   align-items: center;
 
   &__title {
     font-size: 60px;
     text-align: center;
     font-family: 'Oswald', Verdana, serif;
+    font-weight: 600;
   }
 
   &__sub {
@@ -56,13 +57,15 @@
     font-family: 'Open Sans', helvetica, arial, sans-serif;
     font-size: 14px;
     text-decoration: none;
+    font-weight: bolder;
+
+    &:hover {
+      color: $white;
+    }
   }
 
-  &__link:hover {
-    color: $white;
-  }
-
-  &__link:active {
+  &__current {
+    @extend .header__link;
     text-decoration: underline;
   }
 

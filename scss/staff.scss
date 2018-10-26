@@ -1,0 +1,73 @@
+@import "config";
+
+.staff {
+  margin-top: 1em;
+  margin-bottom: 2em;
+
+  &__cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: $max-width;
+    margin: auto;
+  }
+
+  &__card {
+    width: 50%;
+    position: relative;
+
+    @media (max-width: $bpoint__narrow) {
+      width: 100%;
+    }
+
+    &:hover {
+
+      .staff__image {
+        transform: rotateY(180deg);
+        transition-duration: 300ms;
+        transition-timing-function: ease-in-out;
+      }
+
+      .staff__back {
+        transform: rotateY(0deg);
+        transition-duration: 300ms;
+        transition-timing-function: ease-in-out;
+      }
+    }
+  }
+
+  &__back {
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__image {
+    max-height: 100%;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    backface-visibility: hidden;
+  }
+
+  &__title {
+    font-family: 'Oswald', Verdana, serif;
+    font-size: 36px;
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  &__text {
+    font-family: 'Open Sans', helvetica, arial, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 1em;
+  }
+}
