@@ -29,11 +29,11 @@ main {
         margin-bottom: $gutter;
         height: 100%;
 
-        @media (max-width: $bpoint_wide) {
+        @media (max-width: $bpoint__wide) {
             min-width: 40%;
         }
 
-        @media (max-width: $bpoint_narrow) {
+        @media (max-width: $bpoint__narrow) {
             min-width: 70%;
         }
     }
