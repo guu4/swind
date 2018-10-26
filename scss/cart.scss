@@ -1,11 +1,3 @@
-
-main {
-  margin: 0 auto;
-  max-width: $max-width;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 .grid {
   margin: 2.5em 0;
 
@@ -140,6 +132,8 @@ main {
 
   &__name {
     width: 35%;
+    font-size: 1em;
+    font-family: 'Open Sans', helvetica, arial, sans-serif;
 
     &--ccexp {
       width: auto;
@@ -166,12 +160,15 @@ input {
   border: 1px solid $black;
   border-radius: 0.3125em;
   width: 7.5em;
-  height: 40px;
+  height: 2.5em;
   padding-left: 0.5em;
 }
 
 .price {
-  font-size: 2em;
+  font-size: 1.5em;
+  font-family: 'Oswald', Verdana, serif;
+  font-weight: 600;
+  margin: 0.5em 0;
 }
 
 
@@ -180,3 +177,14 @@ input {
   max-width: 100%;
 }
 
+.title {
+  font-size: 2em;
+  font-family: 'Oswald', Verdana, serif;
+  font-weight: 600;
+}
+
+.texti {
+  font-size: 1em;
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
+  margin: 1em 0;
+}
