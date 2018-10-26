@@ -7,6 +7,7 @@ main {
 }
 
 .grid {
+  margin: 2.5em 0;
 
   &__row {
     display: flex;
@@ -17,12 +18,32 @@ main {
     @media (min-width: $bpoint__narrow) {
       flex-direction: row;
     }
+
+    &--form {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &--info {
+      @media (min-width: $bpoint__wide) {
+        justify-content: center;
+      }
+    }
+
+    &--button {
+      align-items: center;
+
+      @media (min-width: $bpoint__narrow) {
+        flex-direction: column;
+      }
+    }
   }
 
   &__col {
     width: 100%;
     padding-left: 10px;
     padding-right: 10px;
+    margin-bottom: 1.5em;
 
     &--text {
       display: flex;
@@ -41,9 +62,21 @@ main {
     }
 
     &--info {
-      @media (min-width: bpoint__narrow) {
-        widows: 50%;
+      display: flex;
+      flex-direction: column;
+
+      @media (min-width: $bpoint__narrow) {
+        width: 50%;
       }
+
+      @media (min-width: $bpoint__wide) {
+        width: 33.33333%;
+      }
+    }
+
+    &--label {
+    height: 40px;
+    line-height: 40px;
     }
 
     &__description {
@@ -58,7 +91,90 @@ main {
       justify-content: flex-end;
     }
   }
+
+
 }
+
+.form__product {
+  display: flex;
+  align-items: flex-end;
+
+  @media (max-width: $bpoint__slim) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__item {
+
+    @media (max-width: $bpoint__slim) {
+      margin: $slim__boxes 0;
+    }
+
+    &--quantity {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0.5em 0;
+
+  @media (max-width: $bpoint__slim) {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: $slim__boxes;
+  }
+
+  &--ccexp {
+    @media (max-width: $bpoint__slim) {
+      flex-direction: row;
+      align-items: center;
+      margin: $slim__boxes;
+    }
+  }
+
+  &__name {
+    width: 35%;
+
+    &--ccexp {
+      width: auto;
+    }
+  }
+
+  &__input {
+    width: 60%;
+    height: 40px;
+
+    &--ccexp {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__ccexp {
+      height: 100%;
+    }
+  }
+}
+
+input {
+  border: 1px solid $black;
+  border-radius: 0.3125em;
+  width: 7.5em;
+  height: 40px;
+  padding-left: 0.5em;
+}
+
+.price {
+  font-size: 2em;
+}
+
+
 
 .image {
   max-width: 100%;
