@@ -23,26 +23,3 @@ $bpoint__wide: 1000px;
 // Margins
 $slim__boxes: 0.1em;
 
-// Grids
-
-// Footer Grid
-
-.grid {
-
-  &__row {
-    margin: auto;
-    max-width: $max-width;
-  }
-
-  &__col {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-left: 10px;
-    margin-right: 10px;
-
-    @media (min-width: $bpoint__wide) {
-      flex-wrap: nowrap;
-    }
-  }
-}

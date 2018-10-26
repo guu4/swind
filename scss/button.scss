@@ -30,6 +30,7 @@
   }
 
   &--cart {
+    flex-direction: row;
     background-color: $white;
     border: 1px solid $black;
     text-align: left;
@@ -52,5 +53,4 @@
   &__text {
     margin: 0 0.5em;
   }
-}
 }
