@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Vöruhúsið</title>
 
-    <link rel="stylesheet" href="grid.css">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="../grid.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   </head>
   <body> 
   <main>
@@ -22,111 +23,135 @@
             </ul>
             <div class="header__cart">
             <a class="header__link" href="cart.html">
-                <img class="header__image" src="../img/cart.svg"></img>Karfa(3)
+                <img class="header__image" src="cart.svg"></img>Karfa(3)
             </a>
             </div>
         </div>
     </header>
     <div class="prod__row">
         <div class="prod__col">
-            <div>
-                <img class="prod__img" src="../img/watch.jpg">
-                <h1 class="prod__title">Ótrúlegt úr</h1>
-                <p class="prod__text">Hvað er klukkan? Þetta úr mun svara því hvenær sem er.</p>
+            <div class="prod__imgcontainer">
+                <img class="prod__img" src="watch.jpg">
             </div>
-            <div>
-                <h2 class="prod__price">99.900.-</h2>
-                <p class="prod__fjolditext">Fjöldi:</p>
-                <div class="prod__form">
-                    <label class="label">
-                        <input class="prod__fjoldi" name="quantity" type="quantity" placeholder=" 1">
-                    </label>
-                    <button class="prod__takki" ><img class="prod__takkamynd" src="../img/cart.svg"></img> Setja í körfu</button>
+            <div class="prod__container">
+                <div class="prod__titleandtext">
+                    <h1 class="prod__title">Ótrúlegt úr</h1>
+                    <p class="prod__text">Hvað er klukkan? Þetta úr mun svara því hvenær sem er.</p>
+                </div>
+                <div class="prod__priceandform">
+                    <h2 class="prod__price">99.900.-</h2>
+                    <p class="prod__fjolditext">Fjöldi:</p>
+                    <div class="prod__form">
+                        <label class="label">
+                            <input class="prod__fjoldi" name="quantity" type="quantity" placeholder=" 1">
+                        </label>
+                        <button class="prod__takki" ><img class="prod__takkamynd" src="cart.svg"></img> Setja í körfu</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="prod__col">
+            <div class="prod__imgcontainer">
+                <img class="prod__img" src="pineapple.jpg">
+            </div>
+            <div class="prod__container">
+                <div class="prod__titleandtext">
+                    <h1 class="prod__title">Ananas drykkur</h1>
+                    <p class="prod__text">Fólk er alveg „ananas“ yfir þessum drykk.</p>        
+                </div>
+                <div class="prod__priceandform">
+                    <h2 class="prod__price">4.900.-</h2>
+                    <p class="prod__fjolditext">Fjöldi:</p>
+                    <div class="prod__form">
+                        <label class="label">
+                            <input class="prod__fjoldi" name="quantity" type="quantity" placeholder=" 1">
+                        </label>
+                        <button class="prod__takki" ><img class="prod__takkamynd" src="cart.svg"></img> Setja í körfu</button>            
+                    </div>    
+                </div>
+            </div>
+        </div>
+        <div class="prod__col">
+            <div class="prod__imgcontainer">
+                <img class="prod__img" src="gameboy.jpg">
+            </div>
+            <div class="prod__container">
+                <div class="prod__titleandtext">
+                    <h1 class="prod__title">Gameboy</h1>
+                    <p class="prod__text">Hver man ekki eftir gameboy?</p> 
+                </div>
+                <div class="prod__priceandform">
+                    <h2 class="prod__price">59.900.-</h2>
+                    <p class="prod__fjolditext">Fjöldi:</p>
+                    <div class="prod__form">
+                        <label class="label">
+                            <input class="prod__fjoldi" name="quantity" type="quantity" placeholder=" 1">
+                        </label>
+                        <button class="prod__takki" ><img class="prod__takkamynd" src="cart.svg"></img> Setja í körfu</button>            
+                    </div>
                 </div>
             </div>
         </div>
         <div class="prod__col">
             <div>
-                <img class="prod__img" src="../img/pineapple.jpg">
-                <h1 class="prod__title">Ananas drykkur</h1>
-                <p class="prod__text">Fólk er alveg „ananas“ yfir þessum drykk.</p>
+                <img class="prod__img" src="shoes.jpg">
             </div>
-            <div>
-                <h2 class="prod__price">4.900.-</h2>
-                <p class="prod__fjolditext">Fjöldi:</p>
-                <div class="prod__form">
-                    <label class="label">
-                        <input class="prod__fjoldi" name="quantity" type="quantity" placeholder=" 1">
-                    </label>
-                    <button class="prod__takki" ><img class="prod__takkamynd" src="../img/cart.svg"></img> Setja í körfu</button>            
+            <div class="prod__container">
+                <div class="prod__titleandtext">
+                    <h1 class="prod__title">Hlaupaskór</h1>
+                    <p class="prod__text">Þú munt hlaupa hratt í þessum</p>
+                </div>
+                <div class="prod_priceandform">
+                    <h2 class="prod__price">19.900.-</h2>
+                    <p class="prod__fjolditext">Fjöldi:</p>
+                    <div class="prod__form">
+                        <label class="label">
+                            <input class="prod__fjoldi" name="quantity" type="quantity" placeholder=" 1">
+                        </label>
+                        <button class="prod__takki" ><img class="prod__takkamynd" src="cart.svg"></img> Setja í körfu</button>            
+                    </div>
                 </div>
             </div>
         </div>
         <div class="prod__col">
             <div>
-                <img class="prod__img" src="../img/gameboy.jpg">
-                <h1 class="prod__title">Gameboy</h1>
-                <p class="prod__text">Hver man ekki eftir gameboy?</p>
+                <img class="prod__img" src="headphones.jpg">
             </div>
-            <div>
-                <h2 class="prod__price">59.900.-</h2>
-                <p class="prod__fjolditext">Fjöldi:</p>
-                <div class="prod__form">
-                    <label class="label">
-                        <input class="prod__fjoldi" name="quantity" type="quantity" placeholder=" 1">
-                    </label>
-                    <button class="prod__takki" ><img class="prod__takkamynd" src="../img/cart.svg"></img> Setja í körfu</button>            
+            <div class="prod__container">
+                <div class="prod__titleandtext">
+                    <h1 class="prod__title">Hágæða heyrnartól</h1>
+                    <p class="prod__text">Þú munt ekki heyra neitt nema hágæða tónlist með þessum hágæða heyrnartólum. Höfum við minnst á að þau eru hágæða?</p>        
+                </div>
+                <div class="prod__priceandform">
+                    <h2 class="prod__price">39.900.-</h2>
+                    <p class="prod__fjolditext">Fjöldi:</p>
+                    <div class="prod__form">
+                        <label class="label">
+                            <input class="prod__fjoldi" name="quantity" type="quantity" placeholder=" 1">
+                        </label>
+                        <button class="prod__takki" ><img class="prod__takkamynd" src="cart.svg"></img> Setja í körfu</button>            
+                    </div>
                 </div>
             </div>
         </div>
         <div class="prod__col">
             <div>
-                <img class="prod__img" src="../img/shoes.jpg">
-                <h1 class="prod__title">Hlaupaskór</h1>
-                <p class="prod__text">Þú munt hlaupa hratt í þessum</p>
+                <img class="prod__img" src="camera.jpg">
             </div>
-            <div>
-                <h2 class="prod__price">19.900.-</h2>
-                <p class="prod__fjolditext">Fjöldi:</p>
-                <div class="prod__form">
-                    <label class="label">
-                        <input class="prod__fjoldi" name="quantity" type="quantity" placeholder=" 1">
-                    </label>
-                    <button class="prod__takki" ><img class="prod__takkamynd" src="../img/cart.svg"></img> Setja í körfu</button>            
+            <div class="prod__container">
+                <div class="prod__titleandtext">
+                    <h1 class="prod__title">Mögnuð myndavél</h1>
+                    <p class="prod__text">Taktu mynd af öllu sem þú sérð.</p>
                 </div>
-            </div>
-        </div>
-        <div class="prod__col">
-            <div>
-                <img class="prod__img" src="../img/headphones.jpg">
-                <h1 class="prod__title">Hágæða heyrnartól</h1>
-                <p class="prod__text">Þú munt ekki heyra neitt nema hágæða tónlist með þessum hágæða heyrnartólum. Höfum við minnst á að þau eru hágæða?</p>
-            </div>
-            <div>
-                <h2 class="prod__price">39.900.-</h2>
-                <p class="prod__fjolditext">Fjöldi:</p>
-                <div class="prod__form">
-                    <label class="label">
-                        <input class="prod__fjoldi" name="quantity" type="quantity" placeholder=" 1">
-                    </label>
-                    <button class="prod__takki" ><img class="prod__takkamynd" src="../img/cart.svg"></img> Setja í körfu</button>            
-                </div>
-            </div>
-        </div>
-        <div class="prod__col">
-            <div>
-                <img class="prod__img" src="../img/camera.jpg">
-                <h1 class="prod__title">Mögnuð myndavél</h1>
-                <p class="prod__text">Taktu mynd af öllu sem þú sérð.</p>
-            </div>
-            <div>
-                <h2 class="prod__price">1.999.900.-</h2>
-                <p class="prod__fjolditext">Fjöldi:</p>
-                <div class="prod__form">
-                    <label class="label">
-                        <input class="prod__fjoldi" name="quantity" type="quantity" placeholder=" 1">
-                    </label>
-                    <button class="prod__takki" ><img class="prod__takkamynd" src="../img/cart.svg"></img> Setja í körfu</button>            
+                <div class="prod__priceandform">
+                    <h2 class="prod__price">1.999.900.-</h2>
+                    <p class="prod__fjolditext">Fjöldi:</p>
+                    <div class="prod__form">
+                        <label class="label">
+                            <input class="prod__fjoldi" name="quantity" type="quantity" placeholder=" 1">
+                        </label>
+                        <button class="prod__takki" ><img class="prod__takkamynd" src="cart.svg"></img> Setja í körfu</button>            
+                    </div>
                 </div>
             </div>
         </div>
